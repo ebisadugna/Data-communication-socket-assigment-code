@@ -22,8 +22,7 @@ while True:
         print(f"The client name is : {recieve_list[0]}")
         print(f"The number choosen by the client is : {recieve_list[1]}")
         print(f"The number choosen by server is : {server_number}")
-        print(
-            f"The sum of client & server number is : {server_number + int(recieve_list[1])}")
+        print(f"The sum of client & server number is : {server_number + int(recieve_list[1])}")
 
         send_data = f"{server_name},{server_number}"
         connection.send(send_data.encode())
