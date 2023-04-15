@@ -24,15 +24,12 @@ while client_socket:
         client_socket.send(send_list[3].encode())
         break
     else:
-
-       # print(f"I am {client_name}")
         recieve_list = recieve_message.split(",")
         print(f"The client name is : {client_name}")
         print(f"The server name is : {recieve_list[0]}")
         print(f"The number choosen by client is : {number_int}")
         print(f"The number choosen by the server is : {recieve_list[1]}")
-        print(
-            f"The sum of client & sever number is : {number_int + int(recieve_list[1])}")
+        print(f"The sum of client & sever number is : {number_int + int(recieve_list[1])}")
         client_socket.send(send_list[2].encode())
         client_socket.close()
         break
